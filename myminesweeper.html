@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+	<title>My Humble A-Code</title>	
+    <script type = "text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" ></script>
+	<script type="text/javascript" src="myminesweeper.js"></script>
+	<link type="text/css" rel="stylesheet" href="myminesweeper.css"/>
+</head>
+
+<body oncontextmenu="return false;">
+    <h1> MINESWEEPER </h1> 
+    <h2> Created by Georgina Halpern and Pamela Needle </h2>
+    <p id = "how"> <strong>Instructions:  </strong> <strong>Left click</strong> on a cell to reveal what is underneath, either the number of surrounding mines or a MINE!  <strong>Right click</strong> to flag the cell if you suspect there is a mine underneath.  The counter starts off as the number of mines on the grid, and decrements with each cell you flag.  The starting number of mines is determined by a set probability for each game level, so the number of mines varies each game.  GOOD LUCK!    </p>
+    <form> Please select a level and click the smiley to begin: <div id="difficulty"> 
+        <input type="radio" name="level" value="Easy" checked="checked"/> Easy
+        <br />
+        <input type="radio" name="level" value="Medium" /> Medium
+        <br />
+        <input type="radio" name="level" value="Hard" /> Hard
+        <br />
+        </div>
+    </form>
+    
+    <table id="gameboard">
+        <thead id = "boardhead">
+            <tr>
+                <th id = "header">
+                    <div id = "scoreboard">000</div>
+                    <div id="start"><img src ="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCZGTB3coUpMOirRyQS-vhmQrhQ_JRC9GdipcMKMsjK1c4Yrtn4hIhWGY"/></div>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="boardbody">
+        </tbody>
+    </table>
+   
+</body>
+    
+</html>
